@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/font-awesome.min.css">
+    <link rel="stylesheet" href="CSS/contact.css">
+    <title>Contact Us</title>
+</head>
+
+<body>
+    <!-- Header Section -->
+    <div class="header">
+        <div class="container">
+
+            <div class="header-content">
+                <div class="logo">
+                    <a href="index.html"><img src="images/Logo/online_shop_logo_generated.jpg" alt="Logo Image"
+                            draggable="false"></a>
+                </div>
+
+                <ul class="nav">
+                    <li> <a href="index.html">Home</a></li>
+                    <li> <a href="index.html#product">Products</a></li>
+                    <li> <a href="about.html">About Us</a></li>
+                    <li> <a href="contactus.html" class="active">Contact Us</a></li>
+                    <li><i class="fa fa-shopping-cart fa-2x"></i></li>
+                    <li> <div id="cart" style="display: block; color: #ffffff;"></div> </li>
+                </ul>
+                <div class="clear"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <div class="contact pd-y">
+        <div class="section-header">
+            <h2 class="section-title">Get In Touch</h2>
+            <span class="line"></span>
+        </div>
+        <div class="container">
+            <div class="getintouch-items">
+                <div class="item">
+                    <i class="fa fa-phone fa-2x"></i>
+                    <h3 class="item-title">Phone</h3>
+                    <span class="item-text">+201019185580</span>
+                </div>
+                <div class="item mg">
+                    <i class="fa fa-envelope fa-2x"></i>
+                    <h3 class="item-title">Email</h3>
+                    <span class="item-text">mustafaelkholy7@gmail.com</span>
+                </div>
+                <div class="item">
+                    <i class="fa fa-map-marker fa-2x"></i>
+                    <h3 class="item-title">Address</h3>
+                    <span class="item-text">Menouf/Menoufia</span>
+                </div>
+            </div>
+            <br>
+            <form action="">
+                <input type="text" placeholder="Name.." class="username" id="username">
+                <span id="nameError" style="display: none ; padding-left: 8px;"></span>
+
+                <input type="email" placeholder="Email.." id="email">
+                <span id="emailError" style="display: none ; padding-left: 8px;"></span>
+
+                <input type="number" placeholder="Phone.." id="phone">
+                <span id="phoneError" style="display: none ; padding-left: 8px;"></span>
+
+                <input type="text" placeholder="subject" id="subject">
+                <span id="subjectError" style="display: none ; padding-left: 8px;"></span>
+
+                <textarea cols="50" rows="10" placeholder="Message.." id="message" ></textarea>
+                <span id="messageError" style="display: none ; padding-left: 8px;"></span>
+
+                <input type="submit" value="Send Message" class="send-message" id="send-message">
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <div class="footer">
+        <ul class="footer-links">
+            <li><a href="tel:01019185580"" class=" hover-opacity"><i class="fa fa-phone"></i></a></li>
+            <li><a href="mailto: mustafaelkholy7@gmail.com" class="hover-opacity"><i class="fa fa-envelope"></i></a>
+            </li>
+            <li><a href="https://github.com/MustafaElkholy" target="_blank" class="hover-opacity"><i
+                        class="fa fa-github"></i></a></li>
+            <li><a href="https://www.youtube.com/@mustafaelkholy4122" target="_blank" class="hover-opacity"><i
+                        class="fa fa-youtube"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/mustafaelkholy74/" target="_blank" class="hover-opacity"><i
+                        class="fa fa-linkedin"></i></a></li>
+        </ul>
+        <p class="copyright">copyright &copy; 2023, all right reserved by Mustafa Elkholy</p>
+    </div>
+
+    <script src="JS/contact.js"></script>
+
+</body>
+
+</html>

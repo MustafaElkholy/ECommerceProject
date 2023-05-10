@@ -1,0 +1,308 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+
+}
+
+body {
+    font-family: 'Varela Round', sans-serif;
+}
+
+.clear {
+    clear: both;
+}
+
+button {
+    font-family: inherit;
+}
+
+a {
+    text-decoration: none;
+}
+
+.pd-y {
+    padding: 120px 0;
+}
+/* ///////////////////////////////////////////////////////////////////////////////////////// */
+
+.section-header {
+    text-align: center;
+    margin-bottom: 20px;
+
+}
+
+.section-header .section-title {
+    font-size: 35px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+
+.section-header .line {
+    display: block;
+    height: 5px;
+    width: 70px;
+    margin: 0 auto 70px auto;
+    background-color: rgb(30, 140, 177);
+
+
+}
+
+
+.header {
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    background: rgba(78, 78, 78, 0.6);
+}
+
+.header .logo {
+    width: 40%;
+    float: left;
+
+}
+
+.header .logo img {
+    margin-top: 10px;
+    overflow: hidden;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+.header .nav {
+    width: 60%;
+    float: left;
+    list-style: none;
+    text-align: right;
+}
+
+.header .nav>li {
+    display: inline-block;
+    text-align: center;
+
+}
+
+.header .nav>li>a {
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    font-weight: bolder;
+    text-decoration: none;
+    padding: 30px 10px;
+    display: block;
+}
+
+.header .nav>li>a.active:after,
+.header .nav>li>a:after {
+    content: "";
+    display: block;
+    height: 3px;
+    margin-top: 2px;
+    background-color: rgb(15, 174, 228);
+    transition: width 0.45s;
+}
+
+.header .nav>li>a.active:after {
+
+    width: 100%;
+
+}
+
+.header .nav>li>a:after {
+
+    width: 0;
+
+}
+
+.header .nav>li>a:hover:after {
+    width: 100%;
+}
+
+
+/* ///////////////////////////////////////////////////////////////////////////////////////// */
+
+.portfolio {
+    background: #f9f9f9;
+}
+
+.portfolio-content {
+    overflow: hidden;
+}
+
+.portfolio-item {
+    width: 32%;
+    float: left;
+    margin-bottom: 40px;
+    position: relative;
+    padding: 20px;
+}
+
+.portfolio-item .layer-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .7);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s;
+
+}
+
+.portfolio-item:hover .layer-content {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+
+.layer-content .layer-info {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 60%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+}
+
+.layer-content .category {
+    color: rgb(64, 186, 235);
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: 10px;
+    position: relative;
+    top: 10px;
+    opacity: 0;
+    visibility: hidden;
+    transition: top 0.5s, opacity 0.5s;
+    transition-delay: 0.2;
+}
+
+.layer-content-title {
+    font-size: 20px;
+    color: #fff;
+    margin-bottom: 10px;
+    position: relative;
+    top: 10px;
+    opacity: 0;
+    visibility: hidden;
+    transition: top 0.5s, opacity 0.5s;
+    transition-delay: 0.3s;
+}
+
+.layer-content a {
+    color: #f9f9f9;
+    position: relative;
+    top: 10px;
+    opacity: 0;
+    visibility: hidden;
+    transition: top 0.5s, opacity 0.5s;
+    transition-delay: 0.3s;
+
+}
+
+.layer-content a i {
+
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-color: rgb(78, 241, 241);
+    line-height: 40px;
+}
+
+.portfolio-item:hover .layer-content-title,
+.portfolio-item:hover .layer-content a,
+.portfolio-item:hover .layer-content .category {
+    top: 0;
+    opacity: 1;
+    visibility: visible;
+
+}
+
+.portfolio-item.mg {
+    margin: 0 2%;
+}
+
+.portfolio-item img {
+    width: 100%;
+}
+
+/* ///////////////////////////////////////////////////////////////////////////////////////// */
+
+
+/* Contact Section*/
+
+.getintouch-items {
+    overflow: hidden;
+    margin-bottom : 20px;
+}
+
+.getintouch-items .item {
+    width: 30%;
+    float: left;
+    text-align: center
+}
+
+.getintouch-items .item.mg {
+    margin: 0 5%
+}
+
+.getintouch-items .item i {
+    color: #0eb5f7;
+}
+
+.getintouch-items .item-title {
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+.getintouch-items .item-text {
+    color: black
+}
+
+
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+/* Footer Section*/
+
+.footer{
+    background: #7dd3f5;
+    text-align: center;
+    padding: 60px 0;
+}
+.footer-links{
+    list-style: none;
+    margin: 20px 0;
+
+}
+.footer-links li{
+    display: inline-block;
+
+}
+.footer-links li a{
+    display: block;
+    width: 50px;
+    height: 50ps;
+    background: #ffffff;
+    color: #006e8a;   
+    border-radius: 50%;
+    margin: 0 5px; 
+    
+}
+.footer-links li a i{
+    line-height: 50px;
+    
+}
+
+.copyright{
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 17px;
+    text-transform: uppercase;
+}

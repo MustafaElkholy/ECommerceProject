@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/font-awesome.min.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/category.css">
+    <title>Home</title>
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <div class="header">
+        <div class="container">
+
+            <div class="header-content">
+                <div class="logo">
+                    <a href="index.html"><img src="images/Logo/online_shop_logo_generated.jpg" alt="Logo Image"
+                            draggable="false"></a>
+                </div>
+
+                <ul class="nav">
+                    <li> <a href="index.html" class="active">Home</a></li>
+                    <li> <a href="index.html#product">Products</a></li>
+                    <li> <a href="about.html">About Us</a></li>
+                    <li> <a href="contactus.html">Contact Us</a></li>
+                    <li><i class="fa fa-shopping-cart fa-2x"></i></li>
+                    <li>
+                        <div id="cart" style="display: block; color: #ffffff;"></div>
+                    </li>
+                </ul>
+
+
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Home Section -->
+    <div class="home">
+        <div class="overlay">
+            <div class="home-content">
+                <h1 class="title">Welcome To Our Electronics Shop</h1>
+                <p class="home-description">Here you Can Find What You need and extra.. </p>
+
+            </div>
+        </div>
+    </div>
+    <hr>
+    <hr>
+    <!-- Slider Section -->
+
+    <div class="slide pd-y">
+        <div class="section-header">
+            <h2 class="section-title">Our Products</h2>
+            <span class="line"></span>
+        </div>
+
+        <div class="container">
+            <div class="slider-container">
+                <div class="slider-images" id="slider-images">
+                    <img src="Images/Slider/1.webp" class="image" id="myimg" onload="onLoad()">
+                </div>
+                <div class="slider-btns">
+                    <button class="prev" onclick="prevShow()">&lt;</button>
+                    <button class="next" onclick="nextShow()">&gt;</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- product Section -->
+    <div class="product pd-y" id="product">
+        <div class="section-header">
+            <h2 class="section-title">our products</h2>
+            <span class="line"></span>
+            <div id="myBtnContainer">
+                <button class="btn active" onclick="filterSelection('all')">Show all </button>
+                <button class="btn" onclick="filterSelection('laptop')">Laptop</button>
+                <button class="btn" onclick="filterSelection('smartphones')"> Smartphones</button>
+                <button class="btn" onclick="filterSelection('smartwatches')">Smartwatches</button>
+                <button class="btn" onclick="filterSelection('headphone')">Headphones</button>
+                <button class="btn" onclick="filterSelection('camera')">DSLR Camera</button>
+            </div>
+            <div class="container">
+
+                <div class="product-content">
+
+                    <div class="product-item">
+                        <div class="filterDiv laptop"><img src="Images/Products/Labtops/lab.jpg" alt="">
+                            <div class="layer-content">
+                                <div class="layer-info">
+                                    <span class="category">Dell Inspiron 13 5310 i7</span>
+                                    <h3 class="layer-content-title">DELL Laptop Dell Inspiron 13 5310 i7-11390H 16GB
+                                        512GB SSD VGA 2GB MX450 13.3-inch Non-Touch Win 11
+                                    </h3>
+                                    <span class="category">45,790 LE</span>
+                                    <i class="fa fa-shopping-cart fa-4x"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="product-item mg">
+                        <div class="filterDiv laptop"><img src="Images/Products/Labtops/lab2.jpg" alt="">
+                            <div class="layer-content">
+                                <div class="layer-info">
+                                    <span class="category">Lenovo IdeaPad Flex 5</span>
+                                    <h3 class="layer-content-title">Lenovo IdeaPad Flex 5 14IAU7 - Intel® Core™ I5-1235U
+                                        - 8GB - 512GB SSD - Intel Iris Xe Graphics
+
+                                    </h3>
+                                    <span class="category">35,359.00 LE</span>
+                                    <i class="fa fa-shopping-cart fa-4x"></i>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <div class="filterDiv laptop"><img src="Images/Products/Labtops/hp.jpg" alt="">
+                            <div class="layer-content">
+                                <div class="layer-info">
+                                    <span class="category">HP Victus Gaming 15</span>
+                                    <h3 class="layer-content-title">HP Victus Gaming 15-FA0083nia Core i7-12700H 16GB-SSD 512GB-NVIDIA GeForce RTX 3050 4GB-15.6 FHD IPS 144HZ -WIN11-SILVER
+
+                                    </h3>
+                                    <span class="category">35,964.95 LE</span>
+                                    <i class="fa fa-shopping-cart fa-4x"></i>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-content">
+
+                    <div class="product-item">
+                        <div class="filterDiv smartphones"><img src="Images/Products/Labtops/apple.jpg" alt="">
+                            <div class="layer-content">
+                                <div class="layer-info">
+                                    <span class="category">Apple IPhone 13 Pro</span>
+                                    <h3 class="layer-content-title">Apple IPhone 13 Pro Single SIM With FaceTime - 128GB - AlpineGreen
+                                    </h3>
+                                    <span class="category">47,900 LE</span>
+                                    <i class="fa fa-shopping-cart fa-4x"></i>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-item mg">
+                        <div class="filterDiv smartphones"><img src="Images/Products/Labtops/onee.jpg" alt="">
+                            <div class="layer-content">
+                                <div class="layer-info">
+                                    <span class="category">One Plus Nord CE 2</span>
+                                    <h3 class="layer-content-title">One Plus Nord CE 2 Dual Sim 5G - 8GB RAM + 128GB Internal Storage - Gray Mirror
+                                    </h3>
+                                    <span class="category">13,498 LE</span>
+                                    <i class="fa fa-shopping-cart fa-4x"></i>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-item">
+                        <div class="filterDiv smartphones"><img src="Images/Products/Labtops/sam.jpg" alt="">
+                            <div class="layer-content">
+                                <div class="layer-info">
+                                    <span class="category">Samsung Galaxy Note20</span>
+                                    <h3 class="layer-content-title">Samsung Galaxy Note20 - 6.7-inch 256GB/8GB Dual SIM 4G Mobile Phone - Mystic Gray
+                                    </h3>
+                                    <span class="category">29,222 LE</span>
+                                    <i class="fa fa-shopping-cart fa-4x"></i>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-content">
+
+                    <div class="product-item">
+                        <div class="filterDiv headphones"><img src="Images/Products/Labtops/akg.jpg" alt="">
+                            <div class="layer-content">
+                                <div class="layer-info">
+                                    <span class="category">AKG K712 PRO</span>
+                                    <h3 class="layer-content-title">AKG K712 PRO Open Air Headphones
+                                    </h3>
+                                    <span class="category">12,544 LE</span>
+                                    <i class="fa fa-shopping-cart fa-4x"></i>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-item mg">
+                        <div class="filterDiv headphones"><img src="Images/Products/Labtops/ank.jpg" alt="">
+                            <div class="layer-content">
+                                <div class="layer-info">
+                                    <span class="category">nker SoundCore Life 2 </span>
+                                    <h3 class="layer-content-title">Anker SoundCore Life 2 Neo Wireless Headphones - 60-Hours Play Time - A3033H11 - Black
+                                    </h3>
+                                    <span class="category">2,179 LE</span>
+                                    <i class="fa fa-shopping-cart fa-4x"></i>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-item">
+                        <div class="filterDiv headphones"><img src="Images/Products/Labtops/sony.jpg" alt="">
+                            <div class="layer-content">
+                                <div class="layer-info">
+                                    <span class="category">Sony WH-CH510</span>
+                                    <h3 class="layer-content-title">Sony WH-CH510 Wireless Bluetooth Headphones With Mic - Blue
+                                    </h3>
+                                    <span class="category">2,099 LE</span>
+                                    <i class="fa fa-shopping-cart fa-4x"></i>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-content">
+                    <div class="product-item">
+                        <div class="filterDiv smartwatches"><img src="Images/Products/Labtops/samm.jpg" alt="">
+                            <div class="layer-content">
+                                <div class="layer-info">
+                                    <span class="category">Samsung Galaxy Watch5</span>
+                                    <h3 class="layer-content-title">Samsung Galaxy Watch5 Aluminum Smartwatch 44mm BT - Graphite
+                                    </h3>
+                                    <span class="category">8,50 LE</span>
+                                    <i class="fa fa-shopping-cart fa-4x"></i>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-item mg">
+                        <div class="filterDiv smartwatches"><img src="Images/Products/Labtops/apsm.jpg" alt="">
+                            <div class="layer-content">
+                                <div class="layer-info">
+                                    <span class="category">Apple Watch Series 8</span>
+                                    <h3 class="layer-content-title">Apple Watch Series 8 GPS 45mm Aluminium Case With Sport Band (S/M) - Black
+                                    </h3>
+                                    <span class="category">9,790 LE</span>
+                                    <i class="fa fa-shopping-cart fa-4x"></i>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-item">
+                        <div class="filterDiv smartwatches"><img src="Images/Products/Labtops/hh.jpg" alt="">
+                            <div class="layer-content">
+                                <div class="layer-info">
+                                    <span class="category">Huawei Watch GT 3 Pro</span>
+                                    <h3 class="layer-content-title">Huawei Watch GT 3 Pro 46mm Light Titanium Case - Gray Leather Strap
+                                    </h3>
+                                    <span class="category">11,599 LE</span>
+                                    <i class="fa fa-shopping-cart fa-4x"></i>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-content">
+                    <div class="product-item">
+                        <div class="filterDiv camera"><img src="Images/Products/Labtops/1.jpg" alt="">
+                            <div class="layer-content">
+                                <div class="layer-info">
+                                    <span class="category">Canon EOS 850D</span>
+                                    <h3 class="layer-content-title">Canon EOS 850D - 24.1MP DSLR Camera With EF-S
+                                        18-55mm IS STM Lens - Black
+                                    </h3>
+                                    <span class="category">45,790 LE</span>
+                                    <i class="fa fa-shopping-cart fa-4x"></i>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-item mg">
+                        <div class="filterDiv camera"><img src="Images/Products/Labtops/2.jpg" alt="">
+                            <div class="layer-content">
+                                <div class="layer-info">
+                                    <span class="category">Canon EOS 2000D</span>
+                                    <h3 class="layer-content-title">CanonType: Digital SLR cameraKey features: EF-S
+                                        18-55mm</h3>
+                                    <span class="category">30,790 LE</span>
+                                    <i class="fa fa-shopping-cart fa-4x"></i>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-item">
+                        <div class="filterDiv camera"><img src="Images/Products/Labtops/3.jpg" alt="">
+                            <div class="layer-content">
+                                <div class="layer-info">
+                                    <span class="category">Canon EOS 6D</span>
+                                    <h3 class="layer-content-title">CANON EOS 6D MARK II DSLR Body Camera, 26.2MP -
+                                        Black
+                                    </h3>
+                                    <span class="category">41,999 LE</span>
+                                    <i class="fa fa-shopping-cart fa-4x"></i>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <div class="contact pd-y">
+        <div class="section-header">
+            <h2 class="section-title">Get In Touch</h2>
+            <span class="line"></span>
+        </div>
+        <div class="container">
+            <div class="getintouch-items">
+                <div class="item">
+                    <i class="fa fa-phone fa-2x"></i>
+                    <h3 class="item-title">Phone</h3>
+                    <span class="item-text">+201019185580</span>
+                </div>
+                <div class="item mg">
+                    <i class="fa fa-envelope fa-2x"></i>
+                    <h3 class="item-title">Email</h3>
+                    <span class="item-text">mustafaelkholy7@gmail.com</span>
+                </div>
+                <div class="item">
+                    <i class="fa fa-map-marker fa-2x"></i>
+                    <h3 class="item-title">Address</h3>
+                    <span class="item-text">Menouf/Menoufia</span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <span class="to-top">
+        <i id="up" class="fa fa-arrow-up"></i>
+    </span>
+
+    <!-- Footer Section -->
+    <div class="footer">
+        <ul class="footer-links">
+            <li><a href="tel:01019185580"" class=" hover-opacity"><i class="fa fa-phone"></i></a></li>
+            <li><a href="mailto: mustafaelkholy7@gmail.com" class="hover-opacity"><i class="fa fa-envelope"></i></a>
+            </li>
+            <li><a href="https://github.com/MustafaElkholy" target="_blank" class="hover-opacity"><i
+                        class="fa fa-github"></i></a></li>
+            <li><a href="https://www.youtube.com/@mustafaelkholy4122" target="_blank" class="hover-opacity"><i
+                        class="fa fa-youtube"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/mustafaelkholy74/" target="_blank" class="hover-opacity"><i
+                        class="fa fa-linkedin"></i></a></li>
+        </ul>
+        <p class="copyright">copyright &copy; 2023, all right reserved by Mustafa Elkholy</p>
+    </div>
+
+    <script src="JS/home.js"></script>
+    <script src="JS/category.js"></script>
+</body>
+
+</html>
